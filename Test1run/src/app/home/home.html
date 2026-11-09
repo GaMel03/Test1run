@@ -1,0 +1,16 @@
+<h2>Home</h2>
+<h3>gymname</h3>
+
+
+
+
+@if (iswelcome) {
+  <p>Come on in</p>
+} @else {
+  <p>Please sign up</p>
+}
+
+
+<button (click)="toggleOpen()"> Welcome </button>
+  
+<button [disabled]="!iswelcome">signup </button>
